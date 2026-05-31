@@ -1,9 +1,11 @@
-require("config.lazy")
-require("nvim-tree.api").tree.open()
+vim.g.editorconfig = false
 
 vim.opt.tabstop=2
 vim.opt.shiftwidth=2
 vim.opt.expandtab=true
+
+require("config.lazy")
+require("nvim-tree.api").tree.open()
 
 -- disable netrw at the very start of your init.lua
 vim.g.loaded_netrw = 1
@@ -33,3 +35,5 @@ local config = {
   },
 }
 require("nvim-tree").setup(config)
+
+
